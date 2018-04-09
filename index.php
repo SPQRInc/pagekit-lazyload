@@ -53,7 +53,7 @@ return [
                 if ($effect = (array_key_exists('effect', $config)
                     ? $config['effect'] : 'show')
                 ) {
-                    $options[] = "effect: '$effect''";
+                    $options[] = "effect: '$effect'";
                 }
                 
                 if ($effecttime = (array_key_exists('effecttime', $config)
@@ -77,7 +77,7 @@ return [
                 if ($scrolldirection = (array_key_exists('scrolldirection',
                     $config) ? $config['scrolldirection'] : 'both')
                 ) {
-                    $options[] = "scrollDirection: '$scrolldirection''";
+                    $options[] = "scrollDirection: '$scrolldirection'";
                 }
                 
                 $options = implode(",", $options);
