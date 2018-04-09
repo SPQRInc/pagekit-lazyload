@@ -1,0 +1,24 @@
+<?php
+
+return [
+    'Settings'                                                                                                                                                                                                      => 'Einstellungen',
+    'Info'                                                                                                                                                                                                          => 'Info',
+    'Lazyload Settings'                                                                                                                                                                                             => 'Lazyload Einstellungen',
+    'HTML Class'                                                                                                                                                                                                    => 'HTML-Klasse',
+    'Effect'                                                                                                                                                                                                        => 'Effekt',
+    'Show'                                                                                                                                                                                                          => 'Anzeigen',
+    'Fade'                                                                                                                                                                                                          => 'Einblenden',
+    'Effect Duration'                                                                                                                                                                                               => 'Effekt-Län ge',
+    'Threshold'                                                                                                                                                                                                     => 'Schwelle',
+    'Visible Only'                                                                                                                                                                                                  => 'Nur sichtbare Elemente',
+    'Scroll Direction'                                                                                                                                                                                              => 'Scroll-Richtung',
+    'Both'                                                                                                                                                                                                          => 'Beide',
+    'Vertical'                                                                                                                                                                                                      => 'Vertikal',
+    'Horizontal'                                                                                                                                                                                                    => 'Horizontal',
+    'Save'                                                                                                                                                                                                          => 'Speichern',
+    'Lazyload Info'                                                                                                                                                                                                 => 'Lazyload Info',
+    'Getting help'                                                                                                                                                                                                  => 'Hilfe erhalten',
+    'You have problems using this extension? Join the Pagekit community forum.'                                                                                                                                     => 'Probleme bei der Verwendung dieser Erweiterung? Im Pagekit-Forum findet sich bestimmt eine Lösung.',
+    'Donate'                                                                                                                                                                                                        => 'Spenden',
+    'Do you like my extensions? They are free. Of course I would like to get a donation, so if you want to, please open the donate link. You may find three possibilities to donate: PayPal, Patreon and Coinhive.' => 'Ist diese Erweiterung hilfreich? Sie ist kostenfrei! Natürlich freue ich mich aber über eine kleine Spende. Der Spenden-Link öffnet eine neue Seite, die drei mögliche Spendenmöglichkeiten zeigt: PayPal, Patreon und Coinhive.',
+];

@@ -1,0 +1,22 @@
+{
+  "name": "spqr/lazyload",
+  "module": "spqr/lazyload",
+  "version": "1.0.0",
+  "type": "pagekit-extension",
+  "title": "Lazy Load",
+  "description": "Adds a lazy load effect for your images.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roman Lossin-Beßler",
+      "homepage": "https://spqr.wtf"
+    }
+  ],
+  "extra": {
+    "icon": "icon.svg",
+    "scripts": "scripts.php"
+  },
+  "require": {
+    "sunra/php-simple-html-dom-parser": "1.5.2"
+  }
+}
