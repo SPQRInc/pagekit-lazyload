@@ -55,6 +55,50 @@
                     </select>
                 </div>
             </div>
+            <div class="uk-form-row">
+                <label for="form-combined" class="uk-form-label">{{ 'Combined' | trans }}</label>
+                <div class="uk-form-controls uk-form-controls-text">
+                    <input id="form-combined" type="checkbox" v-model="package.config.combined">
+                </div>
+            </div>
+            <div class="uk-form-row">
+                <label for="form-delay" class="uk-form-label">{{ 'Delay' | trans }}</label>
+                <div class="uk-form-controls">
+                    <input id="form-delay" class="uk-form-width-small uk-text-right" type="number"
+                           name="delay"
+                           v-model="package.config.delay" min="-1" number>
+                </div>
+            </div>
+            <div class="uk-form-row">
+                <label for="form-enablecallback" class="uk-form-label">{{ 'Enable Callback' | trans }}</label>
+                <div class="uk-form-controls uk-form-controls-text">
+                    <input id="form-enablecallback" type="checkbox" v-model="package.config.callback.enabled">
+                </div>
+            </div>
+            <div class="uk-form-row" v-if="package.config.callback.enabled">
+                <label class="uk-form-label">{{ 'Before Load' | trans }}</label>
+                <div class="uk-form-controls uk-form-controls-text">
+                    <v-editor type="code" :value.sync="package.config.callback.beforeload"></v-editor>
+                </div>
+            </div>
+            <div class="uk-form-row" v-if="package.config.callback.enabled">
+                <label class="uk-form-label">{{ 'After Load' | trans }}</label>
+                <div class="uk-form-controls uk-form-controls-text">
+                    <v-editor type="code" :value.sync="package.config.callback.afterload"></v-editor>
+                </div>
+            </div>
+            <div class="uk-form-row" v-if="package.config.callback.enabled">
+                <label class="uk-form-label">{{ 'On Error' | trans }}</label>
+                <div class="uk-form-controls uk-form-controls-text">
+                    <v-editor type="code" :value.sync="package.config.callback.onerror"></v-editor>
+                </div>
+            </div>
+            <div class="uk-form-row" v-if="package.config.callback.enabled">
+                <label class="uk-form-label">{{ 'On Finished All' | trans }}</label>
+                <div class="uk-form-controls uk-form-controls-text">
+                    <v-editor type="code" :value.sync="package.config.callback.onfinishedall"></v-editor>
+                </div>
+            </div>
             <div class="uk-form-row uk-margin-top">
                 <div class="uk-form-controls">
                     <button class="uk-button uk-button-primary" @click="save">{{ 'Save' | trans }}</button>
