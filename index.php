@@ -111,8 +111,8 @@ return [
                     $options[] = "delay: $delay";
                 }
                 
-                if ($enableplaceholder = (array_key_exists('enabled',
-                    $config['placeholder']) ? $config['placeholder']['enabled']
+                if ($enabledefaultimage = (array_key_exists('enabled',
+                    $config['defaultimage']) ? $config['defaultimage']['enabled']
                     : false)
                 ) {
                     
