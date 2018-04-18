@@ -70,16 +70,16 @@
                 </div>
             </div>
             <div class="uk-form-row">
-                <label for="form-placeholder" class="uk-form-label">{{ 'Add Placeholder' | trans }}</label>
+                <label for="form-defaultimage" class="uk-form-label">{{ 'Add Default Image' | trans }}</label>
                 <div class="uk-form-controls uk-form-controls-text">
-                    <input id="form-placeholder" type="checkbox" v-model="package.config.placeholder.enabled">
+                    <input id="form-defaultimage" type="checkbox" v-model="package.config.defaultimage.enabled">
                 </div>
             </div>
-            <div class="uk-form-row" v-if="package.config.placeholder.enabled">
-                <label class="uk-form-label">{{ 'Placeholder Data URI' | trans }}</label>
+            <div class="uk-form-row" v-if="package.config.defaultimage.enabled">
+                <label class="uk-form-label">{{ 'Default Image  Data URI' | trans }}</label>
                 <div class="uk-form-controls uk-form-controls-text">
                     <p class="uk-form-controls-condensed">
-                        <input type="text" class="uk-form-width-large" v-model="package.config.placeholder.datauri">
+                        <input type="text" class="uk-form-width-large" v-model="package.config.defaultimage.datauri">
                     </p>
                 </div>
             </div>
