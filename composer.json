@@ -1,7 +1,7 @@
 {
   "name": "spqr/lazyload",
   "module": "spqr/lazyload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "pagekit-extension",
   "title": "Lazy Load",
   "description": "Adds a lazy load effect for your images.",
