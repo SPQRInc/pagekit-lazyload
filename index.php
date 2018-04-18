@@ -112,8 +112,8 @@ return [
                 }
                 
                 if ($enabledefaultimage = (array_key_exists('enabled',
-                    $config['defaultimage']) ? $config['defaultimage']['enabled']
-                    : false)
+                    $config['defaultimage'])
+                    ? $config['defaultimage']['enabled'] : false)
                 ) {
                     
                     if ($datauri = (array_key_exists('datauri',
